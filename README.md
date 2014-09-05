@@ -58,5 +58,5 @@ binder.activate();
 binder.deactivate();
 
 // Clear all bindings
-binder.bindings().length = 0;
+binder.clear();
 ```

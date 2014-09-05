@@ -220,6 +220,12 @@ var Binder = function(callback) {
     bindings: function() {
       return keyBindings;
     },
+    clear: function() {
+      keyBindings = {};
+    },
+    unbind: function(sequence) {
+      delete keyBindings[normalizeKeySequence(sequence)];
+    },
     bind: function(sequence, callback) {
       if (typeof callback === 'function') {
         keyBindings[normalizeKeySequence(sequence)] = callback;
