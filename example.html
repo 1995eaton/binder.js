@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <script src="./binder.js"></script>
+</head>
+<body>
+</body>
+<script>
+var binder = Binder();
+binder.setCallback(function(code, event) {
+  document.body.textContent = code;
+});
+binder.activate();
+</script>
+</html>
